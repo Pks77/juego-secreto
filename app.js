@@ -34,9 +34,13 @@ function limpiarCaja() {
     document.querySelector('#valorUsuario').value = '';
 }
 
+
+
 function generarNumeroSecreto() {
     let numeroGenerado = Math.floor(Math.random()*numeroMaximo)+1;
-
+    
+    console.log(numeroGenerado)
+    console.log(listaNumerosSorteados)
     if (listaNumerosSorteados.length == numeroMaximo){
         asignarTextoElemento('p','Ya se sortearon todos los números posibles');
     } else {    
@@ -69,3 +73,4 @@ function reiniciarJuego() {
 }
 
 condicionesIniciales();
+
